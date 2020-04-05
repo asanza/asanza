@@ -1,5 +1,4 @@
 [package]
-name = "mkm34z7pac"
 version = "0.1.0"
 authors = ["Diego Asanza <f.asanza@gmail.com>"]
 edition = "2018"
@@ -10,15 +9,13 @@ keywords = [
     "no-std",
     "arm",
     "cortex-m",
-    "nxp"
+    "nxp",
 ]
-
 license = "0BSD"
 name = "mkm34z7"
 repository = "https://github.com/asanza/mkm34z7"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
+ 
 [dependencies]
 bare-metal = "0.2.0"
 cortex-m = "0.5.8"
