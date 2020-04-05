@@ -3,7 +3,30 @@ name = "mkm34z7pac"
 version = "0.1.0"
 authors = ["Diego Asanza <f.asanza@gmail.com>"]
 edition = "2018"
+categories = ["embedded"]
+description = "Peripheral access API for NXP MKM34z7 microcontrollers"
+documentation = ""
+keywords = [
+    "no-std",
+    "arm",
+    "cortex-m",
+    "nxp"
+]
+
+license = "0BSD"
+name = "mkm34z7"
+repository = "https://github.com/asanza/mkm34z7"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bare-metal = "0.2.0"
+cortex-m = "0.5.8"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.6.5"
+
+[features]
+rt = ["cortex-m-rt/device"]
